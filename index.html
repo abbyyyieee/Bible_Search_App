@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bible Search App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Bible Search</h1>
+
+  <input id="passageInput" placeholder="e.g., John 3:16, Genesis 1:1" />
+
+
+  <select id="translationSelect">
+    <option value="web">World English Bible (WEB)</option>
+    <option value="kjv">King James Version (KJV)</option>
+    <option value="asv">American Standard Version (ASV)</option>
+    <option value="bbe">Bible in Basic English (BBE)</option>
+    <option value="ylt">Young's Literal Translation (YLT)</option>
+  </select>
+
+  <button id="searchBtn">Search</button>
+
+  <div id="result">
+    <p id="reference"></p>
+    <p id="verseText"></p>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
